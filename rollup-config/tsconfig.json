@@ -8,12 +8,11 @@
     "allowJs": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "declaration": true,
-    "emitDeclarationOnly": true
+    "declaration": true //.d.ts 파일 만드는 것
   },
   "include": ["**/*.tsx", "**/*.ts", "**/*.jsx", "**/*.js"],
   "exclude": [

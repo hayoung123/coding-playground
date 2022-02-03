@@ -10,10 +10,13 @@
 
 ## rollup plugin
 
+### default plugins
+
 - rollup-plugin-serve: serve develpoment environment
 - rollup-plugin-livereload: automatic browser refresh when the build file is changed
 - @rollup/plugin-node-resolve: for importing modules installed with NPM
 - @rollup/plugin-babel: transfiling JSX
+  babel 없이도 잘 돌아가긴하는데 왜 다들 넣어놨을까?
 - @rollup/plugin-commonjs: make code import ConnomJS module format
 - @rollup/plugin-replace: replacing the process.env.NODE_ENV variable with a static string
 
