@@ -27,6 +27,7 @@ export default {
     resolve(),
     commonjs(),
     babel({
+      babelHelpers: 'bundled',
       extensions,
       presets: [
         '@babel/preset-env',
@@ -37,13 +38,17 @@ export default {
     typescript(),
     image(),
     postcss({
+      config: {
+        path: './postcss.config.js',
+      },
+      extract: true,
       extensions: ['.css'],
     }),
     html2({
       template: 'public/index.html',
     }),
     serve({
-      open: false,
+      open: true,
       verbose: true,
       contentBase: ['', 'dist'],
       host: 'localhost',

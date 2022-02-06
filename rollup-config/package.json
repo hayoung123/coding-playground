@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "rollup -c --environment NODE_ENV:development",
+    "start": "rollup -c --environment NODE_ENV:development -w",
     "build": "rollup -c rollup.config.js",
     "dev": "rollup -c rollup.config.js -w",
     "exam": "cd example && npm start",
